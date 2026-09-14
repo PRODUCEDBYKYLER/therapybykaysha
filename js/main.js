@@ -14,13 +14,3 @@ navList.querySelectorAll('a').forEach((link) => {
     navToggle.setAttribute('aria-expanded', 'false');
   });
 });
-
-const form = document.getElementById('contactForm');
-const formNote = document.getElementById('formNote');
-
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  // Placeholder submit handler — wire up to Formspree or similar before launch.
-  formNote.textContent = "Thanks for reaching out! (Form isn't connected yet — placeholder confirmation.)";
-  form.reset();
-});
